@@ -1,0 +1,93 @@
+:root {
+  --color-white: #ffffff;
+}
+/* HOMEPAGE  */
+/* HOMEPAGE CONTAINER  */
+.homepage {
+  /* display  */
+  display: grid;
+  grid-template-rows: 6rem 1fr;
+  /* styling  */
+  background-color: var(--background);
+  /* box model  */
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/* HEADER  */
+/* login button of header  */
+.login-btn {
+  background-color: var(--primary);
+}
+
+/* MAIN  */
+main {
+  /* display  */
+  display: grid;
+  grid-template-rows: 1fr 5fr 3fr;
+  grid-row-gap: 2rem;
+  /* styling */
+  background-color: var(--background);
+  /* box-model  */
+  padding: 3rem 10rem;
+  max-height: calc(100vh - 6rem);
+}
+
+/* CATEGORIES OF MAIN  */
+.categories {
+  /* display  */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: var(--spc-md);
+}
+
+/* cards of categories  */
+.cat-card {
+  /* position  */
+  position: relative;
+  /* styling */
+  background-color: var(--color-white);
+  /* box model */
+  max-height: 14vh;
+}
+.cat-card-btn {
+  /* position  */
+  position: absolute;
+  left: 0;
+  top: 35%;
+  /* style  */
+  background-color: var(--background);
+  color: var(--dark);
+  /* box-model  */
+  width: 100%;
+  border-radius: 0px;
+}
+.cat-card-btn:hover {
+  /* style  */
+  color: var(--primary);
+}
+
+/* HERO OF MAIN */
+.hero {
+  /* BOX-MODEL  */
+  max-height: 40vh;
+}
+
+/* LATEST SECTION OF MAIN  */
+.latest-items-section {
+  /* display  */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  place-items: center;
+}
+
+/* card of latest item section  */
+.latest-item-card {
+  background-color: var(--color-white);
+  width: calc(100% - 3rem);
+}
+
+.card__body h3 {
+  margin: 0;
+}
