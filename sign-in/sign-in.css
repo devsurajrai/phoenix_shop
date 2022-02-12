@@ -1,0 +1,26 @@
+:root {
+  --color-white: #ffffff;
+  --color-text: #0c5460;
+}
+body {
+  color: var(--color-text);
+}
+
+/* sign-in-form-container  */
+.sign-in-form-container {
+  height: 100vh;
+}
+/* FORM  */
+
+.sign-in-form {
+  width: 25vw;
+  max-height: 50vh;
+  background-color: var(--color-white);
+}
+
+/* input checkbox  */
+
+/* sign-in-button  */
+.sign-in-btn:hover {
+  opacity: 80%;
+}
