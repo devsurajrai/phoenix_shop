@@ -16,7 +16,7 @@
         <header class="nav-header  nav-header--e-comm nav--e-comm-bg  w-p-full">
             <nav class="nav nav--e-comm  nav--e-comm-bg flex-r flex-s flex-sp-eve ">
                 <!-- Brand Name  -->
-                <a class=" brand-name--e-comm text-md m-lr-md " href="#">PHOENIX<sub>SHOP</sub></a>
+                <a class=" brand-name--e-comm text-md m-lr-md " href="../../index.html">PHOENIX<sub>SHOP</sub></a>
                 <!-- Search Field  -->
                 <label class="nav-search flex-r br-md p-xs ">
                     <img src="https://ui-phoenix.netlify.app/Assets/svg/navigation/search.svg" alt="search">
@@ -24,19 +24,26 @@
                 </label>
                 <!-- RHS Icons  -->
                 <ul class="nav-menu__items flex-r flex-center">
+                    <!-- Login Button  -->
                     <li>
-                        <button class="button button--secondary login-btn">Login</button>
+                        <button class="button button--secondary login-btn"><a
+                                href="./pages/log-in/log-in.html">Login</a></button>
                     </li>
+                    <!-- wishlist and cart icons -->
                     <li class="nav-icon position-r">
-                        <img class="img-100 cursor-pr"
-                            src="https://ui-phoenix.netlify.app/Assets/svg/navigation/heart-hollow.svg" alt="wishlist">
-                        <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
+                        <a href="#">
+                            <img class="img-100 cursor-pr"
+                                src="https://ui-phoenix.netlify.app/Assets/svg/navigation/heart-hollow.svg"
+                                alt="wishlist">
+                            <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
+                        </a>
                     </li>
                     <li class="nav-icon position-r flex-r ">
-                        <img class="img-100 p-r-xs cursor-pr"
-                            src="https://ui-phoenix.netlify.app/Assets/svg/navigation/cart.svg" alt="wishlist">
-                        <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
-                        <a class="text-sm color-white" href="">Cart</a>
+                        <a href="">
+                            <img class="img-100 p-r-xs cursor-pr"
+                                src="https://ui-phoenix.netlify.app/Assets/svg/navigation/cart.svg" alt="cart">
+                            <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -51,19 +58,19 @@
                     <a class="button btn-sm cat-card-btn text-sm" href="">RACQUETS</a>
                 </div>
                 <div class="cat-card br-sm">
-                    <img class="res-img" src="./Assets/images/kit-bag.png" alt="" />
+                    <img class="res-img" src="./Assets/images/kit-bag.png" alt="kit-bag" />
                     <a class="button btn-sm cat-card-btn text-sm" href="">KIT BAG</a>
                 </div>
                 <div class="cat-card br-sm">
-                    <img class=" res-img" src="./Assets/images/shoes.png" alt="" />
+                    <img class=" res-img" src="./Assets/images/shoes.png" alt="shoes" />
                     <a class="button btn-sm cat-card-btn text-sm" href="">SHOES</a>
                 </div>
                 <div class="cat-card br-sm">
-                    <img class=" res-img" src="./Assets/images/apparel.png" alt="" />
+                    <img class=" res-img" src="./Assets/images/apparel.png" alt="apparel" />
                     <a class="button btn-sm cat-card-btn text-sm" href="">APPAREL</a>
                 </div>
                 <div class="cat-card br-sm">
-                    <img class="res-img br-sm" src="./Assets/images/assessories.png" alt="" />
+                    <img class="res-img br-sm" src="./Assets/images/assessories.png" alt="assessories" />
                     <a class="button btn-sm cat-card-btn text-sm" href="">ASSESSORIES</a>
                 </div>
             </section>
@@ -72,7 +79,7 @@
 
             <section class="hero br-sm">
                 <img class="res-img br-sm" src="https://ui-phoenix.netlify.app/Assets/images/lee-chong-wei.jpeg"
-                    alt="" />
+                    alt="lee-chong-wei-badminton-player" />
             </section>
 
             <!-- LATEST ITEMS  -->
