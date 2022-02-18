@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ui-phoenix.netlify.app/main.css">
+    <script src="https://kit.fontawesome.com/396044bcab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./product-listing.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <div class="products">
+        <!-- HEADER  -->
+        <header class="nav-header  nav-header--e-comm nav--e-comm-bg  w-p-full">
+            <nav class="nav nav--e-comm  nav--e-comm-bg flex-r flex-s flex-sp-eve ">
+                <!-- Brand Name  -->
+                <a class=" brand-name--e-comm text-md m-lr-md " href="../../index.html">PHOENIX<sub>SHOP</sub></a>
+                <!-- Search Field  -->
+                <label class="nav-search flex-r br-md p-xs ">
+                    <img src="https://ui-phoenix.netlify.app/Assets/svg/navigation/search.svg" alt="search">
+                    <input class="nav-input m-lr-md w-p-full h-p-full " type="text" placeholder="Search" />
+                </label>
+                <!-- RHS Icons  -->
+                <ul class="nav-menu__items flex-r flex-center">
+                    <!-- Login Button  -->
+                    <li>
+                        <button class="button button--secondary login-btn"><a
+                                href="../log-in/log-in.html">Login</a></button>
+                    </li>
+                    <li>
+                        <a class="color-white text-sm" href="./product-listing.html">SHOP NOW </a>
+                    </li>
+                    <!-- wishlist and cart icons -->
+                    <li class="nav-icon position-r">
+                        <a href="../wishlist/wishlist.html">
+                            <img class="img-100 cursor-pr"
+                                src="https://ui-phoenix.netlify.app/Assets/svg/navigation/heart-hollow.svg"
+                                alt="wishlist">
+                            <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-icon position-r flex-r ">
+                        <a href="">
+                            <img class="img-100 p-r-xs cursor-pr"
+                                src="https://ui-phoenix.netlify.app/Assets/svg/navigation/cart.svg" alt="cart">
+                            <span class="badge icon-badge nav-icon-badge  position-a br-xl color-white">0</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN  -->
+        <main>
+            <aside class="product-list-sidebar p-s">
+                <h4 class="flex-r flex-sb">Filter <span class="fw-l ">Clear</span></h4>
+                <label class="slider">
+                    <h4>Price</h4>
+                    <p class="flex-r flex-sb color-dark-grey text-sm"><span>50</span><span>150</span><span>200</span>
+                    </p>
+                    <input class="w-p-full" type="range" min="50" max="250" value="150">
+                </label>
+                <section>
+                    <h4>Categories</h4>
+                    <label class="flex-r align-items-center" for="">
+                        <input class="m-r-s" type="checkbox">
+                        <span class="text-sm">Beginners</span>
+                    </label>
+                    <label class="flex-r align-items-center" for="">
+                        <input class="m-r-s" type="checkbox">
+                        <span class="text-sm">Intermediate</span>
+                    </label>
+                    <label class="flex-r align-items-center" for="">
+                        <input class="m-r-s" type="checkbox">
+                        <span class="text-sm">Advance</span>
+                    </label>
+                </section>
+                <section>
+                    <h4>Ratings</h4>
+                    <label class="flex-r align-items-center">
+                        <input class="m-r-s" name="rating" type="radio">
+                        <span class="text-sm">4 Stars & Above</span>
+                    </label>
+                    <label class="flex-r align-items-center">
+                        <input class="m-r-s" name="rating" type="radio">
+                        <span class="text-sm">3 Stars & Above</span>
+                    </label>
+                    <label class="flex-r align-items-center">
+                        <input class="m-r-s" name="rating" type="radio">
+                        <span class="text-sm">2 Stars & Above</span>
+                    </label>
+                    <label class="flex-r align-items-center" for="">
+                        <input class="m-r-s" name="rating" type="radio">
+                        <span class="text-sm">1 Stars & Above</span>
+                    </label>
+                </section>
+                <section>
+                    <h4>Ratings</h4>
+                    <label class="flex-r align-items-center">
+                        <input class="m-r-s" name="price-sort" type="radio">
+                        <span class="text-sm">Price - High to Low</span>
+                    </label>
+                    <label class="flex-r align-items-center">
+                        <input class="m-r-s" name="price-sort" type="radio">
+                        <span class="text-sm">Price - Low to High</span>
+                    </label>
+                </section>
+            </aside>
+            <section class="products-list-items p-md">
+                <h4>Showing All Products <span class="text-sm m-l-xs color-dark-grey">( Showing 30 Products )</span>
+                </h4>
+
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="card card--shadow position-r  text-sm txt-algn">
+                    <div class="badge card-badge heart-badge-active position-a br-md color-white"><i
+                            class="fas fa-heart"></i>
+                    </div>
+                    <div class="card__img">
+                        <img class="img-100" src="https://ui-phoenix.netlify.app/Assets/images/badminton.jpg"
+                            alt="badminton-racket" />
+                    </div>
+                    <div class="card__body-footer">
+                        <div class="card__body">
+                            <p class="card__body-desc">Yonex Astrox 88D Racket</p>
+                            <h3 class="card__body-amt">&#8377 1000</h3>
+                        </div>
+                        <button class="button button--primary no-br card__footer-btn ">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
