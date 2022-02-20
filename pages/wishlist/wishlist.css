@@ -24,10 +24,6 @@
   padding: 1rem;
   background-color: var(--light-color);
 }
-.card-badge i {
-  font-size: 2em;
-  color: red;
-}
 
 .heart-badge-active i {
   font-size: 2em;
